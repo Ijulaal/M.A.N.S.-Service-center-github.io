@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position:center;
+	position: relative;
+    overflow: hidden;
+    float:left;
+}
+/*navigation area*/
+.box{
+    width: 100%;
+    height: 20vh;
+    background-color: #437AC4;
+    color:#fff;
+    background-size: cover;
+    background-image: url(img/car.jpg);
+    float: left;
+}
+.navarea{
+    margin: auto;
+    padding: 20px;
+    float: left;
+}
+.logo{
+	width: 200px;
+    padding: 30px;
+	cursor: pointer;
+}
+.navarea nav{
+    width: 80%;
+	height: 5%;
+	margin-left: 170%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+    font-weight: bold;
+    transform: translateY(-310%);
+}
+.navarea nav a{
+    text-decoration: none;
+}
+.mark a{
+    color: #437AC4;
+    background-color:#fff;
+    padding: 10px;
+}
+.navarea nav .highligt a{
+    color: #fff; 
+    padding: 10px;
+    margin-left: -20px;
+}
+.highligt a:hover{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px; 
+}
+
+
+/*Main area*/
+.wrapper{
+    width: 100%;
+    height: 72vh;
+    padding: 20px;
+    float: left;
+}
+.wrapper h2{
+    color: #437AC4;
+    text-align: center;
+    padding: 20px;
+}
+.wrapper hr{
+    width: 140px;
+    height: 3px;
+    background-color: #437AC4;
+    margin-left: 45%;
+    margin-top: -20px;
+}
+.wrapper h3{
+    color: #437AC4;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.mainbox{
+    display: flex;
+    padding:20px;
+    float: left;
+}
+.leftside{
+    flex-basis: 50%;
+    padding: 8px;
+    margin-left: 20px;
+    float: left;
+}
+.rightside{
+    flex-basis: 50%;
+    padding: 8px;
+    margin-left: 20px;
+    float: left;   
+}
+
+/*footer area*/
+footer{
+    width: 100%;
+    height: 8vh;
+    background-color: #437AC4; 
+    color:#fff;
+    display: inline-flex;
+    justify-content: center;
+    float:left;
+}
+.adjust{
+    margin: 8px 50px 250px 8px;
+    padding:8px;
+}
+.adjust p i{
+    width: 25px;
+}
+
+
+@media only screen and (max-width:1024px){
+    /*navigation area*/
+    .navarea nav{
+        width: 80%;
+        margin-left: 80%;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    /*Main area*/
+    .wrapper{
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper hr{
+        margin-left: 43%;
+        margin-top: -20px;
+    }
+
+    /*footer area*/
+    footer{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        float:left;
+    }
+    /*navigation area*/
+    .box{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .navarea{
+        font-size: 10px;
+        margin: auto;
+        padding: 10px;
+        float: left;
+        margin-left: -250px;
+    }
+    .logo{
+        width: 150px;
+        padding: 40px;
+        float: left;
+    }
+    .nav{
+        font-size: 10px;
+        width: 2%;
+        height: auto;
+        float:left;
+    }
+    
+    /*Main area*/
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    .wrapper hr{
+        margin-left: 34%;
+        margin-top: -20px;
+    }
+    .wrapper h3{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .mainbox{
+        width: 100%;
+        display: inline;
+        float: left;
+    }
+
+    /*footer area*/
+    footer{
+        width: 100%;
+        height: 100%;
+        display: inline;
+        padding: 5px;
+        float:left;
+    }
+    .adjust{
+        margin: 8px 0px 0px 8px;
+    }
+}

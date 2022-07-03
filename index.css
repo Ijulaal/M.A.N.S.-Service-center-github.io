@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position:center;
+	position: relative;
+    overflow: hidden;
+    float:left;
+}
+/*home page front area*/
+.box{
+    width: 100%;
+    height: 100vh;
+    background-color: #437AC4;
+    color:#fff;
+    background-size: cover;
+    background-image: url(img/car.jpg);
+}
+.navarea{
+    margin: auto;
+    padding: 20px;
+    float: left;
+}
+.logo{
+	width: 200px;
+    padding: 30px;
+	cursor: pointer;
+}
+.navarea nav{
+    width: 30%;
+	height: 5%;
+	margin-left: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+    font-weight: bold;
+    transform: translateY(-250%);
+}
+.navarea nav a{
+    text-decoration: none;
+}
+.mark a{
+    color: #437AC4;
+    background-color:#fff;
+    padding: 10px;
+}
+.navarea nav .highligt a{
+    color: #fff; 
+}
+.navarea nav .highligt a:hover{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px; 
+    padding: 10px;
+}
+.bigheader{
+    width: 100%;
+	color: #fbfcfd;
+	position: relative;
+    margin-top: 150px;
+	top: 50%;
+	left: 7.9%;
+	Z-index: 2;
+}
+.bigheader h1{
+    width: 100%;
+    font-size: 4em;
+}
+.bigheader p{
+    width: 65%;
+    margin-bottom: 25px;
+}
+.bigheader a{
+    text-decoration: none;
+    color: #fbfcfd;
+	padding: 10px 25px;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 15px;
+	outline:none;
+	cursor: pointer;
+}
+.bigheader a{
+    text-decoration: none;
+    color:#fff
+}
+.bigheader a:hover{
+    background-color: #fff;
+    color: #437AC4;
+}
+
+/*home page promotion area*/
+.promo{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin: 20px; 
+}
+.promo h2{
+    color: #437AC4;
+    text-align: center;
+    padding: 20px;
+}
+.promo hr{
+    width: 140px;
+    height: 3px;
+    background-color: #437AC4;
+    margin-left: 45%;
+    margin-top: -20px;
+}
+.promobox{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    left: 13%;
+    margin: 20px;
+    border-radius: 30px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #437AC4;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.promobox span{
+    font-weight: bold;
+    font-size: 6em;
+}
+.content{
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+
+/*home page customer review area*/
+.customers{
+    width: 100%;
+    height:auto;
+    background-color: #437AC4; 
+}
+.customers h2{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.customers hr{
+    width: 140px;
+    height: 3px;
+    background-color: #fff;
+    margin-left: 45%;
+    margin-top: -20px;
+}
+section{
+	float: left;
+	position: relative;
+	padding: 30px 0;
+	background: #fcfcfd;
+	z-index: 1;
+	width: 100%;
+}
+.section-title{
+	float: left;
+	position: relative;
+	width: 100%;
+	padding-bottom: 40px; 
+}
+.section-title p{
+	color: #7d93b2;
+	font-size: 13px;
+	line-height: 20px;
+	max-width: 550px;
+	margin: 0 auto;
+}
+.section-title h2 {
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: #007aff;
+	font-size: 34px;
+	font-weight: 800;
+	position: relative;
+}
+.section-separator {
+	float: left;
+	width: 100%;
+	position: relative;
+	margin: 20px 0;
+}
+.section-separator:before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 0;
+	height: 3px;
+	width: 50px;
+	border-radius: 3px;
+	z-index: 2;
+	background-color: #007aff;
+	margin-left: -25px;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+    margin-top: 10px;
+}
+.listing-carousel-button{
+	position: absolute;
+	top: 85%;
+	width: 80px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: -25px;
+	z-index: 100;
+	cursor: pointer;
+	background: #007aff;
+	box-shadow: 0 9px 26px rgba(58, 87,135,0.45);
+	transition: all 200ms linear;
+	outline: none;
+}
+.listing-carousel-button.listing-carousel-button-next{
+	right: -30px;
+	padding-right: 20px;
+	border-radius: 60px 0 0 60px;
+}
+.listing-carousel-button.listing-carousel-button-prev{
+	left: -30px;
+	padding-left: 20px;
+	border-radius: 0 60px 60px 0;
+}
+.listing-carousel-button.listing-carousel-button-next:hover{
+	right: -15px;
+	background: rgba(6,27,65,0.4);
+}
+.listing-carousel-button.listing-carousel-button-prev:hover{
+	left: -15px;
+	background: rgba(6,27,65,0.4);
+}
+.testi-item {
+	transition: all .3s ease-in-out;
+	transform: scale(0.9);
+	opacity: 0.9;
+}
+.testimonials-text {
+	padding: 75px 50px 75px;
+	overflow:hidden;
+	background: #f5f6fa;
+	border:1px solid #f1f1f1;
+	border-radius: 10px;
+	transition: all .3s ease-in-out;
+}
+.testimonials-text-after{
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	position: absolute;
+	color: #ccc;
+	opacity: .3;
+	font-size: 35px;
+	transition: all 400ms linear;
+	bottom: 25px;
+	right: 30px;
+}
+.testimonials-text-before{
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	position: absolute;
+	color: #ccc;
+	opacity: .3;
+	font-size: 35px;
+	transition: all 400ms linear;
+	top: 25px;
+	left: 30px;
+}
+.testimonials-text .listing-rating{
+	float: none;
+	display: inline-block;
+	margin-bottom: 12px;
+}
+.listing-rating i{
+	color: #007aff;
+}
+.testimonials-avatar h3{
+	font-weight: 600;
+	color: #7d93b2;
+	font-size: 18px;
+}
+.testimonials-avatar h4{
+	 font-weight:400;
+	 font-size:12px;
+	 padding-top:6px;
+	 color:#007aff;
+}
+.testimonials-carousel .swiper-slide{
+	padding: 30px 0;
+}	 
+.testi-avatar{
+	position: absolute;
+	left: 50%;
+	top: -30px;
+	width: 90px;
+	height: 90px;
+	margin-left: -45px;
+	z-index: 20;
+}
+.testi-avatar img{
+	width: 90px;
+	height: 90px;
+	float: left;
+	border-radius: 100%;
+	border:6px solid #fff;
+	box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
+}
+.swiper-slide-active .testimonials-text {
+	background: #fff;
+	box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
+}
+.testimonials-text p{
+	color: #878c9f;
+	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	line-height: 24px;
+	padding-bottom: 10px;
+	font-weight: 500;
+}
+.text-link{
+	position: absolute;
+	bottom:0;
+	padding: 15px 0;
+	border-radius: 10px 10px 0 0;
+	background: #f9f9f9;
+	border:1px solid #eee;
+	box-shadow: 0 10px 15px rgba(0,0,0,0.03);
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+}
+.swiper-slide-active .testi-item{
+	opacity: 1;
+	transform: scale(1.0);
+}
+.tc-pagination{
+	float: left;
+	margin-top: 10px;
+	width: 100% !important;
+}
+.tc-pagination_wrap {
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	width: 100%;
+}
+.tc-pagination2{
+	float: none;
+	display: inline-block;
+	padding: 14px 0;
+	background: #fff;
+	border-radius: 30px;
+	min-width: 250px;
+	border-bottom: 0;
+}
+.tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet{
+	opacity: 1;
+	background: #384f95;
+	margin:0 2px;
+	width: 10px;
+	height: 10px;
+	transition: all 300ms ease-in-out;
+}
+
+/*footer area*/
+footer{
+    width: 100%;
+    height: 8vh;
+    background-color: #fff; 
+    color:#437AC4;
+    display: inline-flex;
+    justify-content: center;
+    float:left;
+}
+.adjust{
+    margin: 8px 50px 250px 8px;
+    padding:8px;
+}
+.adjust p i{
+    width: 25px;
+}
+
+@media only screen and (max-width:1024px){
+	.box{
+		background-image: url(img/car.jpg);
+	}
+    /*navigation area*/
+    .navarea nav{
+        width: 80%;
+		height: auto;
+        display: inline-flex;
+		transform: translateX(-50%);
+    }
+
+    /*Main area*/
+    .promo{
+        width: 100%;
+        height: 100%;
+    }
+	.promo hr{
+        margin-left: 43%;
+        margin-top: -20px;
+	}
+	.customers{
+		width: 100%;
+        height: 100%;	
+	}
+	.customers hr{
+        margin-left: 43%;
+        margin-top: -20px;
+	}
+	.testimonials-text{
+		width: 100%;
+	}
+	
+    /*footer area*/
+    footer{
+        width: 100%;
+        height: auto;
+    }	
+}
+
+@media only screen and (max-width:768px) {
+	.navarea{
+		font-size: 10px;
+	}
+	.promo{
+        width: 100%;
+        height: 100%;
+    }
+	.promo hr{
+        margin-left: 35%;
+        margin-top: -20px;
+	}
+	.customers{
+		width: 100%;
+        height: 100%;	
+	}
+	.customers hr{
+        margin-left: 35%;
+        margin-top: -20px;
+	}
+	/*footer area*/
+    footer{
+        width: 100%;
+        height: 100%;
+        display: inline;
+        padding: 5px;
+        float:left;
+    }
+    .adjust{
+        margin: 8px 0px 0px 8px;
+    }	
+}
