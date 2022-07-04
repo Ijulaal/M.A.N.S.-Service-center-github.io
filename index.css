@@ -73,6 +73,11 @@
     width: 100%;
     font-size: 4em;
 }
+#newarea{
+	background-color:#437AC4;
+	padding:20px;
+	border-radius: 3px;
+}
 .bigheader p{
     width: 65%;
     margin-bottom: 25px;
